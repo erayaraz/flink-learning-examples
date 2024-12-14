@@ -1,0 +1,144 @@
+2024-12-13 19:25:51.494 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: 
+2024-12-13 19:25:51.684 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: 
+2024-12-13 19:25:51.789 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: 
+2024-12-13 19:25:58.877 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: { "plate": "34ABC123", "engineWarning": true, "hoodOpen": true}
+2024-12-13 19:26:14.107 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: { "plate": "34ABC123", "engineWarning": true, "hoodOpen": false }
+2024-12-13 19:27:26.446 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: { "plate": "34ABC123", "engineWarning": true, "hoodOpen": false }
+2024-12-13 19:28:36.692 ERROR flink.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: 
+2024-12-13 19:55:18.748 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:         processWarnings(vehicleStream, new HoodOpenedWarningProcessor());
+2024-12-13 19:55:18.749 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:         processWarnings(vehicleStream, new EngineTemperatureWarningProcessor());
+2024-12-13 19:55:18.748 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:         processWarnings(vehicleStream, new SpeedWarningProcessor());
+2024-12-13 19:55:18.749 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:         processWarnings(vehicleStream, new AirbagWarningProcessor());
+2024-12-13 19:55:18.748 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:         processWarnings(vehicleStream, new FuelLevelWarningProcessor());
+2024-12-13 19:55:18.748 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:         processWarnings(vehicleStream, new EngineWarningProcessor());
+2024-12-13 19:56:12.443 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: [A
+2024-12-13 19:56:13.252 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: [A
+2024-12-13 19:56:16.151 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:51.107 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:51.199 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:51.405 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:53.775 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:53.978 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:54.080 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:54.286 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:54.390 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:54.495 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:54.704 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:56:54.804 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:57:46.716 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: { "plate": "34ABC123", "engineWarning": true, "airbagWarning": true, "hoodOpen": true, "speed": 150, "engineTemperature": 110, "fuelLevel":100
+2024-12-13 19:59:03.480 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 19:59:03.571 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.240 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.242 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.250 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.250 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.250 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.250 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.338 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.345 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.346 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.346 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.346 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.347 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.439 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.439 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.439 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.439 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.439 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.440 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.542 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.543 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.544 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.544 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.544 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.544 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.646 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.647 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.648 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.651 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.653 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.654 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.654 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.654 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.655 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.655 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.655 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:10.655 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.122 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.329 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.945 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.946 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.949 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.949 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.950 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:13.950 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.050 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.050 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.050 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.050 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.050 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.051 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.160 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.161 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.162 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.165 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.165 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.168 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.257 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.257 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.257 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.257 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.258 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.258 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.362 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.363 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.365 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.365 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.368 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.369 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.467 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.467 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.467 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.467 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.468 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:14.468 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.294 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.296 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.297 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.298 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.301 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.301 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.397 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.399 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.400 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.400 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.403 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.403 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.497 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.497 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.497 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.497 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.498 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.498 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.600 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.600 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.601 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.601 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.601 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.602 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.707 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.707 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.708 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.709 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.709 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.710 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.809 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.809 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.810 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.810 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.810 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:15.810 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:33.460 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:33.671 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 20:01:33.770 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data:
+2024-12-13 21:51:48.689 ERROR vehicledataanalyzer.analyzer.VehicleDataAnalyzer - Failed to parse vehicle data: 
