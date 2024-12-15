@@ -7,7 +7,9 @@ import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.ObjectMap
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
+import org.apache.flink.util.OutputTag;
 import vehicledataanalyzer.analyzer.processor.*;
+import vehicledataanalyzer.model.vehicle.AlarmDataModel;
 import vehicledataanalyzer.model.vehicle.VehicleDataModel;
 
 import java.time.Duration;
@@ -25,6 +27,7 @@ public class VehicleDataAnalyzer {
 
     public static void main(String[] args) throws Exception {
         var env = StreamExecutionEnvironment.getExecutionEnvironment();
+        OutputTag<AlarmDataModel> alarmTag = new OutputTag<>("alarms") {};
 
         var rawStream = env.socketTextStream("localhost", 4567);
 
@@ -35,20 +38,20 @@ public class VehicleDataAnalyzer {
                                 .<VehicleDataModel>forBoundedOutOfOrderness(Duration.ofSeconds(1))
                                 .withTimestampAssigner((event, timestamp) -> System.currentTimeMillis())
                 );
-        final var processors = List.of(new EngineWarningProcessor(), new HoodOpenedWarningProcessor(), new AirbagWarningProcessor(),
-                new SpeedWarningProcessor(), new EngineTemperatureWarningProcessor(), new FuelLevelWarningProcessor());
+        final var processors = List.of(new EngineWarningProcessor(alarmTag), new HoodOpenedWarningProcessor(alarmTag), new AirbagWarningProcessor(alarmTag),
+                new SpeedWarningProcessor(alarmTag), new EngineTemperatureWarningProcessor(alarmTag), new FuelLevelWarningProcessor(alarmTag));
 
-        processors.forEach(processor -> processWarnings(vehicleStream, processor));
+        processors.forEach(processor -> processAndSinkAlarms(vehicleStream, processor, alarmTag));
         env.execute("Vehicle Data Analyzer");
     }
 
-    private static void processWarnings(SingleOutputStreamOperator<VehicleDataModel> vehicleStream, KeyedProcessFunction processor) {
+    private static void processAndSinkAlarms(SingleOutputStreamOperator<VehicleDataModel> vehicleStream, KeyedProcessFunction processor, OutputTag<AlarmDataModel> alarmTag) {
         vehicleStream
                 .keyBy(VehicleDataModel::getPlate)
                 .process(processor)
-                .print();
+                .getSideOutput(alarmTag)
+                .addSink(new AlarmToDatabaseSink());
     }
-
 
     private static VehicleDataModel parseVehicleData(String line) {
         try {

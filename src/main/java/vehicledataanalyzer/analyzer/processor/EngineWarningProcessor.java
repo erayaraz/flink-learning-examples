@@ -6,6 +6,9 @@ import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
+import org.apache.flink.util.OutputTag;
+import vehicledataanalyzer.analyzer.enums.AlarmType;
+import vehicledataanalyzer.model.vehicle.AlarmDataModel;
 import vehicledataanalyzer.model.vehicle.VehicleDataModel;
 
 import java.time.Duration;
@@ -13,9 +16,13 @@ import java.time.Duration;
 public class EngineWarningProcessor extends KeyedProcessFunction<String, VehicleDataModel, String> {
     private static final long ALARM_COOLDOWN = Duration.ofMinutes(1).toMillis();
     private static final int WARNING_THRESHOLD = 3;
-
     private transient ValueState<Integer> consecutiveWarningCount;
     private transient ValueState<Long> lastAlarmTimestamp;
+    private final OutputTag<AlarmDataModel> alarmOutputTag;
+
+    public EngineWarningProcessor(OutputTag<AlarmDataModel> alarmOutputTag) {
+        this.alarmOutputTag = alarmOutputTag;
+    }
 
     @Override
     public void open(final Configuration parameters) {
@@ -33,6 +40,7 @@ public class EngineWarningProcessor extends KeyedProcessFunction<String, Vehicle
                 var currentTime = ctx.timerService().currentProcessingTime();
                 if (currentTime - lastAlarmTime >= ALARM_COOLDOWN) {
                     out.collect("ALARM! Plate: " + vehicle.getPlate() + " - Engine warning detected!");
+                    ctx.output(alarmOutputTag, AlarmDataModel.builder().plate((vehicle.getPlate())).alarmType(AlarmType.ENGINE_WARNING.toString()).timestamp(currentTime).build());
                     lastAlarmTimestamp.update(currentTime);
                 }
                 count = 0;
