@@ -55,6 +55,18 @@
             <version>${flink.version}</version>
             <scope>provided</scope>
         </dependency>
+        <!-- It is used to provide the JDBC connector for Apache Flink, allowing interaction with relational databases. -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-jdbc</artifactId>
+            <version>3.1.0-1.17</version>
+        </dependency>
+        <!-- It includes the PostgreSQL JDBC driver, enabling the Flink JDBC connector to interact with PostgreSQL databases. -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
